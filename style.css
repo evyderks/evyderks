@@ -1,0 +1,92 @@
+body {
+  font-family:'Courier New';
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  background-color:	rgb(210, 166, 121);
+}
+
+h1 {
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.recepy {
+  text-align: left;
+}
+.recepy li {
+  padding: 20px 0px;
+}
+
+.header {
+  box-sizing: border-box;
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width:100%;
+  background-color: black;
+  color: rgb(210, 166, 121);
+  font-weight: bold;
+  text-align:center;
+  font-size: x-large;
+  padding: 10px;
+}
+.content {
+  padding:60px 10px 10px 10px;
+}
+
+.content p {
+    padding: 0px 40px;
+}
+.ingredients {
+  border: 2px dotted white;
+  padding: 10px;
+  text-align:left;
+  font-family: 'Viner Hand ITC';
+  margin-bottom:20px;
+}
+
+.image {
+    border:1px solid black;
+}
+.image img {
+    width: 100%;
+}
+
+.clearfix {
+  width: 100%;
+  overflow: auto;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+.col {
+  width:100%;
+  text-align:center;
+}
+.col img {
+    width:100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        flex-direction: row;
+    }
+    .ingredients {
+        float: right;
+        width: 250px;
+    }
+    .image {
+        float: left;
+        width: 250px;
+        margin: 10px 40px;
+    }
+}
